@@ -1,0 +1,67 @@
+.sidebar {
+  flex: 1;
+  height: calc(100vh - 50px);
+  background-color: rgb(173, 156, 156);
+  position: sticky;
+  top: 20px;
+  overflow: auto;
+}
+
+.sidebarWrapper {
+  padding: 10px;
+  color: #555;
+  overflow: auto;
+}
+
+.sidebarMenu {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.sidebarTitle {
+  font-size: 13px;
+  color: lightgray;
+  position: sticky;
+}
+
+.sidebarList {
+  list-style: none;
+  overflow: auto;
+  margin: 0;
+  padding: 5px;
+}
+
+.sidebarListItem {
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.sidebarListItem.active,
+.sidebarListItem:hover {
+  background-color: aqua;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
